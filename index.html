@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINE 連投ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>LINE 連投ツール</h1>
+  <form id="generateForm">
+    <label for="baseMessage">固定メッセージ:</label><br>
+    <input type="text" id="baseMessage" placeholder="メッセージを入力" required><br>
+    <label for="repeatCount">繰り返し回数:</label><br>
+    <input type="number" id="repeatCount" min="1" value="5" required><br>
+    <button type="submit">生成</button>
+  </form>
+  <div id="linkContainer">
+    <h2>共有リンク:</h2>
+    <p id="currentLink">リンクはまだ生成されていません。</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
